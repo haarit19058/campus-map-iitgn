@@ -11,31 +11,31 @@ const locations = [
         name: 'Library', 
         coords: [23.2150, 72.6839], 
         info: 'Central Library of IITGN', 
-        image: 'https://example.com/library.jpg' 
+        image: "./assets/images/dog.jpg" 
     },
     { 
         name: 'Boys Hostel Block A', 
         coords: [23.2139, 72.6851], 
         info: 'Hostel for undergraduate students', 
-        image: 'https://example.com/boys_hostel.jpg' 
+        image: "./assets/images/dog.jpg" 
     },
     { 
         name: 'Girls Hostel', 
         coords: [23.2148, 72.6862], 
         info: 'Accommodation for female students', 
-        image: 'https://example.com/girls_hostel.jpg' 
+        image: "./assets/images/dog.jpg" 
     },
     { 
         name: 'Main Academic Block', 
         coords: [23.2146, 72.6834], 
         info: 'Academic hub of the institute', 
-        image: 'https://example.com/academic_block.jpg' 
+        image: "./assets/images/dog.jpg" 
     },
     { 
         name: 'Sports Complex', 
         coords: [23.2135, 72.6820], 
         info: 'Sports facilities including a gym and courts', 
-        image: 'https://example.com/sports_complex.jpg' 
+        image: "./assets/images/dog.jpg" 
     }
 ];
 
@@ -45,12 +45,14 @@ locations.forEach(loc => {
         .addTo(map)
         .bindPopup(`
             <div class="popup-content">
-                <img src="${loc.image}" alt="${loc.name}">
+                <img src="${loc.image}" alt="${loc.name}" style="width: 200px; height: 200px; object-fit: cover;">
                 <b>${loc.name}</b><br>
                 ${loc.info}
             </div>
         `);
 });
+
+
 
 // Search functionality
 document.getElementById('search').addEventListener('input', (e) => {
