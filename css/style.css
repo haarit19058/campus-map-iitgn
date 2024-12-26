@@ -1,5 +1,5 @@
 #map { height: 100vh; }
-.search-bar {
+/* .search-bar {
     position: absolute;
     top: 10px;
     left: 50%;
@@ -9,12 +9,4 @@
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-.popup-content img.popup-image {
-    width: 200px !important;
-    height: 200px !important;
-    object-fit: cover !important;
-}
-
+} */

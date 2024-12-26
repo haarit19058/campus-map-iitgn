@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IITGN Campus Map</title>
+    <link rel="icon" href="./assets/images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <div class="search-bar">
-        <input type="text" id="search" placeholder="Search locations...">
-        <button onclick="startTour()">Start Guided Tour</button>
+        <input type="text" id="search" placeholder="Search hostels...">
+        <button onclick="searchHostel()">Search</button>
     </div>
+    <label>
+        <input type="checkbox" id="allBuildings" class="checkbox" checked> All Buildings
+    </label>
+    <label>
+        <input type="checkbox" id="outdoorFacilities" checked> Outdoor Facilities
+    </label>
+    <label>
+        <input type="checkbox" id="parking-entrance" checked> Parking/Entrance
+    </label>
+    <label>
+        <input type="checkbox" id="toggleHostels" class="checkbox" checked> Hostels
+    </label>
+    <label>
+        <input type="checkbox" id="toggleAcadBlocks" class="checkbox" checked> Academic Blocks
+    </label>
+    <label>
+        <input type="checkbox" id="toggleHousingBlocks" class="checkbox" checked> Housing Blocks
+    </label>
+    <label>
+        <input type="checkbox" id="toggleFoodCourts" class="checkbox" checked> Food Courts
+    </label>
     <div id="map"></div>
     <script src="js/main.js"></script>
 </body>
+
 </html>
